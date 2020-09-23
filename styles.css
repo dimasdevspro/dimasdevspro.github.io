@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-    
+    :root {
+        --color-green: #50fa7b;
+        --color-rocket: #7159c1;
+    }
     
     * {
         margin: 0;
@@ -19,9 +22,9 @@
         margin: 30px;
     }
 
-    .links  {
+    .links a {
         margin: 0 16px;
-        color: blueviolet;
+        color: var(--color-rocket);
         font-size: 18px;
         line-height: 28px;
         text-decoration: none;
@@ -29,7 +32,7 @@
     }
 
     .links a:hover {
-        color: chartreuse;
+        color: var(--color-green);
         transition: 600ms;
     }
 
@@ -49,6 +52,15 @@
         margin-bottom: 30px;
     }
 
+    .infos p {
+        width: 500px;
+        margin: 30px auto
+    }
+
     .infos li {
         line-height: 28px;
+    }
+
+    #link-footer a {
+        border-bottom: 1px solid var(--color-green);
     }
