@@ -35,16 +35,14 @@
         color: var(--color-green);
         transition: 600ms;
     }
-
+    
     #img {
-        position: relative;
         text-align: center;
     }
-
-    img {
+    
+    #img img{
         border-radius: 50%;
         border: 5px solid var(--color-rocket);
-        
     }
 
     .infos {
