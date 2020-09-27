@@ -93,12 +93,13 @@
     .card__info {
         padding: 24px;
         text-align: center;
+        color: white;
     }
 
     .card__content h2{
-        font-size: 18px;
+        font-size: 16px;
     }
-    .card_info {
+    .card__info {
         font-size: 12px;
     }
 
