@@ -82,6 +82,7 @@
 
     .card {
         background-color: #7159c1;
+        margin-bottom: 100px;
         
     }
 
@@ -97,9 +98,9 @@
     }
 
     .card__content h2{
-        font-size: 16px;
+        font-size: 18px;
     }
-    .card__info {
+    .card_info {
         font-size: 12px;
     }
 
