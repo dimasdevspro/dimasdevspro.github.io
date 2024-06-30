@@ -67,6 +67,13 @@ header {
     margin: 0px 1px;
 }
 
+.gallery img:hover {
+    opacity: 0.5;
+    z-index: 1;
+    transition: 0.5s;
+    background-color: #000011;
+}
+
 #img_avatar {
     text-align: center;
 }
