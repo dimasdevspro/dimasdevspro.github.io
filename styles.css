@@ -53,6 +53,20 @@ header {
     font-size: 16px;
 }
 
+.gallery {
+    width: 80%;
+    height: 250px;
+    margin: 25px auto;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.gallery img {
+    width: 300px;
+    height: 233px;
+    margin: 0px 1px;
+}
+
 #img_avatar {
     text-align: center;
 }
