@@ -55,7 +55,6 @@ header {
 
 #img_avatar {
     text-align: center;
-    margin-left: 50px;
 }
 
 #img_avatar img{
@@ -84,6 +83,7 @@ header {
 
 .info_container_ulist li {
     margin-bottom: 10px;
+   list-style-type: none; 
 }
 
 .show {
