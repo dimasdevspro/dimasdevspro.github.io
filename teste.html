@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeria Automática</title>
+    <style>
+      body {
+        background: #111;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .slider {
+        width: 90%;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .slider-track {
+        display: flex;
+        width: calc(250px * 10);
+        animation: scroll 30s linear infinite;
+      }
+
+      .slide {
+        width: 250px;
+        flex-shrink: 0;
+        margin-right: 20px;
+      }
+
+      .slide img {
+        width: 100%;
+        border-radius: 15px;
+      }
+
+      @keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slider">
+      <div class="slider-track">
+        <div class="slide">
+          <img src="https://picsum.photos/id/1015/400/250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://picsum.photos/id/1016/400/250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://picsum.photos/id/1018/400/250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://picsum.photos/id/1020/400/250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://picsum.photos/id/1024/400/250" alt="" />
+        </div>
+        <!-- repete as mesmas imagens para looping suave -->
+        <div class="slide">
+          <img src="https://picsum.photos/id/1015/400/250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://picsum.photos/id/1016/400/250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://picsum.photos/id/1018/400/250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://picsum.photos/id/1020/400/250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://picsum.photos/id/1024/400/250" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
