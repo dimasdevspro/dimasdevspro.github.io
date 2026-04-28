@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio Dimas Alves Pereira</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="./favicon/favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <nav class="links">
+        <a href="#home">Home</a>
+        <a href="#curriculum">Currículo</a>
+        <a href="#projects">Projetos</a>
+        <a href="#contact">Contato</a>
+      </nav>
+    </header>
+    <section id="home" class="show_titulo">
+      <h1>Home</h1>
+    </section>
+    <section class="card">
+      <div class="imagem_estilizada_Dimas">
+        <img
+          src="./assets/imagem_estilizada_Dimas.png"
+          alt="Imagem de IA de Dimas Alves Pereira"
+          title="Imagem de IA de Dimas Alves Pereira"
+          width="300"
+        />
+      </div>
+      <article class="info">
+        <p>
+          Olá, meu nome é Dimas Alves Pereira sou Desenvolvedor Front-End com
+          experiência em desenvolvimento de aplicativos web, sites ou landing
+          pages.
+        </p>
+        <p>
+          Atualmente estou focado em trazer essas soluções com as seguintes
+          ferramentas Web:
+        </p>
+        <div class="stacks-1">
+          <figure>
+            <img src="./assets/React_icon.png" alt="React" title="React" />
+            <figcaption>React</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="./assets/JavaScript_icon.png"
+              alt="JavaScript"
+              title="JavaScript"
+            />
+            <figcaption>JavaScript</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="./assets/Typescript_icon.svg"
+              alt="TypeScript"
+              title="TypeScript"
+            />
+            <figcaption>TypeScript</figcaption>
+          </figure>
+          <figure>
+            <img src="./assets/HTML_icon.svg" alt="HTML" title="HTML" />
+            <figcaption>HTML</figcaption>
+          </figure>
+          <figure>
+            <img src="./assets/CSS_icon.svg" alt="CSS" title="CSS" />
+            <figcaption>CSS</figcaption>
+          </figure>
+        </div>
+        <p>
+          Também possuo experiência e conhecimentos com Node.js em backend e
+          banco de dados não-relacional e relacional.
+        </p>
+        <div class="stacks-2">
+          <figure>
+            <img src="./assets/NodeJS_icon.png" alt="Node.js" title="Node.js" />
+            <figcaption>Node.js</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="./assets/MongoDB_icon.png"
+              alt="MongoDB"
+              title="MongoDB"
+            />
+            <figcaption>MongoDB</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="./assets/Firebase_icon.png"
+              alt="Firebase"
+              title="Firebase"
+            />
+            <figcaption>Firebase</figcaption>
+          </figure>
+          <figure>
+            <img src="./assets/SQL_icon.png" alt="SQL" title="SQL" />
+            <figcaption>SQL</figcaption>
+          </figure>
+        </div>
+      </article>
+    </section>
+    <section id="curriculum" class="show_titulo">
+      <h1>Currículo</h1>
+    </section>
+    <section class="card">
+      <article class="info">
+        <p>
+          <span style="text-decoration: dashed">Clique</span> no botão ao lado
+          para baixar meu currículo e saber mais detalhes do meu background.
+        </p>
+      </article>
+      <div id="imagens_currículo">
+        <div class="imagem_de_alguém_digitando">
+          <img
+            src="./assets/imagem_de_alguém_digitando.png"
+            alt="Imagem de IA de Dimas Alves Pereira"
+            title="Imagem de IA de Dimas Alves Pereira"
+            width="300"
+          />
+        </div>
+        <div class="imagem_botao_meu_curriculo_Dimas">
+          <a id="cvLink" target="_blank" rel="noopener noreferrer">
+            <button
+              onclick="updateCvLink()"
+              id="botão_currículo"
+              type="button"
+              alt="Meu_curriculo_Dimas Alves Pereira"
+              title="Meu_curriculo_Dimas Alves Pereira"
+            >
+              Baixar Currículo
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="show_titulo">
+      <h1>Projetos - Destaques</h1>
+    </section>
+    <section>
+      <div id="modals">
+        <div class="modal" id="Bloco de Notas.png">
+          <img
+            id="image_modal"
+            src="./assets/Bloco de Notas.png"
+            alt="Bloco de Notas"
+          />
+          <div class="modal_content">
+            <div class="modal_header">
+              <p>12 Fev 2024</p>
+              <img src="./assets/React_icon.png" alt="ReactJS" />
+            </div>
+            <div class="modal_body">
+              <h2>Bloco de Notas</h2>
+              <p>
+                Aplicativo de bloco de notas, para criar, editar e organizar
+                notas. Aplicativo proposto pela escola Rocketseat.
+                <a
+                  id="link_deploy"
+                  href="https://notepad-nlw-expert.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Ver Projeto
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="Rocketnfts.png">
+          <img
+            id="image_modal"
+            src="./assets/Rocketnfts.png"
+            alt="Rocketnfts"
+          />
+          <div class="modal_content">
+            <div class="modal_header">
+              <p>24 Jul 2022</p>
+              <img src="./assets/HTML_icon.svg" alt="HTML" />
+            </div>
+            <div class="modal_body">
+              <h2>Rocketnfts</h2>
+              <p>
+                Landing page para um projeto de NFTs, com design moderno e
+                responsivo. Projeto proposto pela escola Rocketseat.
+              </p>
+              <a
+                id="link_deploy"
+                href="https://dimasdevspro.github.io/rocketnfts/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ver Projeto
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="Rocketcard.png">
+          <img
+            id="image_modal"
+            src="./assets/Rocketcard.png"
+            alt="Rocketcard"
+          />
+          <div class="modal_content">
+            <div class="modal_header">
+              <p>2 Fev 2024</p>
+              <img src="./assets/JavaScript_icon.png" alt="JavaScript" />
+            </div>
+            <div class="modal_body">
+              <h2>Rocketcard</h2>
+              <p>
+                Aplicativo para criar cartões de visita digitais e
+                compartilhá-los facilmente. Projeto proposto pela escola
+                Rocketseat.
+              </p>
+              <a
+                id="link_deploy"
+                href="https://dimasdevspro.github.io/rocketcard/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ver Projeto
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="button_see_all">
+        <a href="portfolio.html" target="_blank" rel="noopener noreferrer">
+          Ver Todos os Projetos
+        </a>
+      </div>
+    </section>
+    <section id="contact" class="show_titulo">
+      <h1>Contato</h1>
+    </section>
+    <section id="contato">
+      <div id="imagem_contato">
+        <img
+          src="./assets/Avatar contato.png"
+          alt="Avatar de Dimas com camiseta de gatinnho"
+        />
+      </div>
+      <form id="form_contato" action="" method="post">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <div class="modal_overlay">
+      <div class="modal" id="Bloco_de_Notas.png">
+        <a class="close_modal">
+          <i> X </i>
+        </a>
+        <img
+          id="image_modal"
+          src="./assets/Bloco de Notas.png"
+          alt="Bloco de Notas"
+        />
+        <div class="modal_content">
+          <div class="modal_header">
+            <p></p>
+            <img src="./assets/React_icon.png" alt="ReactJS" />
+          </div>
+          <div class="modal_body">
+            <h2></h2>
+            <p></p>
+            <a
+              id="link_deploy_overlay"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              >Ver Projeto</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="script.js" defer></script>
+  <script src="github.js"></script>
+</html>

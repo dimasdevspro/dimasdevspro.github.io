@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio DimasDevsPro</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="./favicon/favicon.ico" />
+  </head>
+
+  <body>
+    <header>
+      <div class="links">
+        <a href="index.html">Home</a>
+      </div>
+    </header>
+    <section id="projects" class="show_titulo">
+      <h1>Projetos</h1>
+    </section>
+    <section>
+      <div id="modals"></div>
+      <p id="projects-message" class="menu_portfolio">Carregando projetos...</p>
+    </section>
+    <div class="modal_overlay">
+      <div class="modal" id="Bloco_de_Notas.png">
+        <a class="close_modal">
+          <i> X </i>
+        </a>
+        <img
+          id="image_modal"
+          src="./assets/Bloco de Notas.png"
+          alt="Bloco de Notas"
+        />
+        <div class="modal_content">
+          <div class="modal_header">
+            <p></p>
+            <img src="./assets/React_icon.png" alt="ReactJS" />
+          </div>
+          <div class="modal_body">
+            <h2></h2>
+            <p></p>
+            <a
+              id="link_deploy_overlay"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              >Ver Projeto</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="portfolio.js" defer></script>
+  </body>
+</html>

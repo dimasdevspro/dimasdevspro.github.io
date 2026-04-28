@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+  --color-green: #50fa7b;
+  --color-violet: #6753a8;
+}
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+body {
+  background: black;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  padding: 30px;
+  text-align: center;
+  margin: 30px;
+  background: rgb(19, 18, 18);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.links a {
+  margin: 0 16px;
+  color: var(--color-green);
+  font-size: 28px;
+  line-height: 38px;
+  text-decoration: none;
+}
+
+.links a:hover {
+  color: var(--color-violet);
+  transition: 600ms;
+}
+
+#home,
+#curriculum,
+#projects,
+#contact {
+}
+
+.menu_portfolio {
+  font-size: 12px;
+  color: var(--color-green);
+  text-align: center;
+}
+
+.menu_portfolio_projects h2 {
+  margin-top: 20px;
+}
+.menu_portfolio_projects a {
+  line-height: 30px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.gallery {
+  width: 80%;
+  height: 250px;
+  margin: 25px auto;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.gallery img {
+  width: 300px;
+  height: 233px;
+  margin: 0px 1px;
+}
+
+.gallery img:hover {
+  opacity: 0.5;
+  z-index: 1;
+  transition: 0.5s;
+  background-color: #000011;
+}
+
+#img_avatar {
+  text-align: center;
+}
+
+#img_avatar img {
+  border-radius: 50%;
+  width: 200px;
+  border: 5px solid var(--color-green);
+}
+
+.info {
+  width: 70%;
+  margin: 40px auto;
+  color: white;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.info p {
+  margin-bottom: 20px;
+}
+
+.imagem_estilizada_Dimas {
+  text-align: center;
+  width: 30%;
+}
+
+.imagem_estilizada_Dimas img {
+  width: 300px;
+}
+
+#imagens_currículo {
+  position: relative;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 30%;
+  margin: 20px auto;
+  height: 360px;
+}
+
+.imagem_botao_meu_curriculo_Dimas {
+  position: absolute;
+  justify-self: center;
+  align-items: center;
+  width: 30%;
+}
+
+.imagem_botao_meu_curriculo_Dimas a {
+  text-decoration: none;
+}
+
+.imagem_de_alguém_digitando {
+  postion: absolute;
+  text-align: center;
+}
+
+#botão_currículo {
+  display: block;
+  width: 150px;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #9955e8;
+  color: #2c243b;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#botão_currículo:hover {
+  background-color: #50fa7b;
+  color: #000000;
+  transition: 0.5s;
+}
+
+.show_titulo {
+  text-align: center;
+  color: var(--color-green);
+  border-bottom: 1px solid var(--color-green);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.img_show {
+  text-align: center;
+}
+
+.img_show img {
+  width: 100%;
+  height: 100%;
+}
+#link-footer {
+  text-align: center;
+}
+
+#link-footer a {
+  line-height: 100px;
+  font-size: 20px;
+  border-bottom: 1px solid var(--color-green);
+}
+
+.card {
+  display: flex;
+  width: 93%;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* stacks */
+
+.stacks-1,
+.stacks-2 {
+  display: flex;
+  justify-content: center; /* centraliza na horizontal */
+  align-items: center; /* alinha verticalmente */
+  gap: 20px; /* espaço entre os ícones */
+  flex-wrap: wrap; /* quebra linha se faltar espaço */
+  width: 93%;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.stacks-1 img {
+  width: 50px;
+  height: 50px;
+}
+.stacks-2 img {
+  width: 75px;
+  height: 75px;
+}
+
+figure img {
+  display: flex;
+  flex-direction: column; /* imagem em cima, texto embaixo */
+  align-items: center;
+  width: 80px; /* largura realista */
+}
+
+figure img {
+  width: 75px;
+  height: 75px;
+}
+
+figcaption {
+  margin-top: 6px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.modal_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(248, 246, 246, 0.5);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.close_modal {
+  position: relative;
+  margin-bottom: 20px;
+  top: 10px;
+  align-self: flex-end;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.modal_overlay.active {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease;
+}
+
+#modals {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 3fr));
+  gap: 20px;
+  width: 93%;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.modal {
+  width: 350px;
+  height: 500px;
+  background-color: rgb(19, 18, 18);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+#image_modal {
+  width: 330px;
+  border-radius: 5px 5px 0 0;
+}
+
+.modal_content {
+  text-align: left;
+}
+
+.modal_content p {
+  margin: 10px 0px;
+}
+
+.modal_header {
+  display: flex;
+  font-size: 18px;
+  margin: 10px 0px;
+  justify-content: space-between;
+}
+
+.modal_header img {
+  width: 20px;
+  height: 20px;
+}
+
+#button_see_all {
+  text-align: center;
+  margin: 40px 0px;
+}
+
+#button_see_all a {
+  background-color: rgb(19, 18, 18);
+  text-decoration: none;
+  color: var(--color-green);
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+
+#link_deploy {
+  display: none;
+}
+
+.link_deploy {
+  display: none;
+}
+
+#link_deploy_overlay {
+  display: none;
+  margin-top: 15px;
+  color: var(--color-green);
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  border: 2px solid var(--color-green);
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+#link_deploy_overlay:hover {
+  background-color: var(--color-green);
+  color: white;
+}
+
+#contato {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 50px;
+  width: 93%;
+  margin: 20px auto;
+}
+
+#imagem_contato img {
+  width: 300px;
+}
+
+#form_contato {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 50%;
+}
+
+#form_contato label {
+  color: var(--color-green);
+  font-size: 16px;
+}
+
+#form_contato input,
+#form_contato textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#form_contato button {
+  width: 100px;
+  padding: 10px;
+  background-color: var(--color-green);
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
