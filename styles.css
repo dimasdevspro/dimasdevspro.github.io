@@ -9,11 +9,18 @@
   margin: 0;
   border: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   background: black;
   font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 header {
@@ -394,7 +401,8 @@ figcaption {
 @media (max-width: 768px) {
   header {
     padding: 18px;
-    margin: 16px;
+    margin: 0;
+    width: 100%;
   }
 
   p {
@@ -417,15 +425,15 @@ figcaption {
   .show_titulo {
     display: block;
     width: 100%;
-    margin: 10px 0;
-    padding: 0;
+    margin: 0;
+    padding: 10px 0;
   }
 
   .card {
     flex-direction: column;
     width: 100%;
-    margin: 10px auto;
-    padding: 12px;
+    margin: 0;
+    padding: 0;
   }
 
   .imagem_estilizada_Dimas,
@@ -461,8 +469,8 @@ figcaption {
   .stacks-1,
   .stacks-2 {
     width: 100%;
-    margin: 12px auto;
-    padding: 12px;
+    margin: 12px 0;
+    padding: 0 12px;
     gap: 12px;
   }
 
@@ -494,16 +502,16 @@ figcaption {
 
   #modals {
     grid-template-columns: 1fr;
-    width: calc(100% - 24px);
-    margin: 10px auto;
-    padding: 10px;
+    width: 100%;
+    margin: 10px 0;
+    padding: 0 12px;
   }
 
   .modal {
     width: 100%;
     max-width: 100%;
     height: auto;
-    padding: 16px;
+    padding: 12px;
   }
 
   .modal_header {
@@ -518,7 +526,8 @@ figcaption {
   #contato {
     flex-direction: column;
     gap: 16px;
-    padding: 0 12px;
+    padding: 0;
+    width: 100%;
   }
 
   #form_contato {
