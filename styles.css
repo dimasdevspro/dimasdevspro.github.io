@@ -390,3 +390,142 @@ figcaption {
   border-radius: 5px;
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  header {
+    padding: 18px;
+    margin: 16px;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .links a {
+    margin: 0;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .show_titulo {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 0;
+  }
+
+  .card {
+    flex-direction: column;
+    width: 100%;
+    margin: 10px auto;
+    padding: 12px;
+  }
+
+  .imagem_estilizada_Dimas,
+  .info,
+  #contato,
+  #form_contato,
+  #imagens_currículo,
+  .imagem_de_alguém_digitando,
+  .imagem_botao_meu_curriculo_Dimas,
+  .gallery {
+    width: 100%;
+  }
+
+  .imagem_estilizada_Dimas {
+    margin-bottom: 20px;
+  }
+
+  .imagem_estilizada_Dimas img,
+  #imagem_contato img,
+  .imagem_de_alguém_digitando img,
+  .gallery img,
+  #image_modal {
+    width: 100%;
+    height: auto;
+  }
+
+  .info {
+    margin: 20px auto;
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .stacks-1,
+  .stacks-2 {
+    width: 100%;
+    margin: 12px auto;
+    padding: 12px;
+    gap: 12px;
+  }
+
+  .stacks-1 img,
+  .stacks-2 img,
+  figure img {
+    width: 60px;
+    height: 60px;
+  }
+
+  #imagens_currículo {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    height: auto;
+    padding: 0 12px;
+  }
+
+  .imagem_botao_meu_curriculo_Dimas {
+    position: static;
+    width: 100%;
+    text-align: center;
+  }
+
+  #botão_currículo {
+    width: 100%;
+    max-width: 240px;
+  }
+
+  #modals {
+    grid-template-columns: 1fr;
+    width: calc(100% - 24px);
+    margin: 10px auto;
+    padding: 10px;
+  }
+
+  .modal {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 16px;
+  }
+
+  .modal_header {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  #button_see_all {
+    margin: 24px 0;
+  }
+
+  #contato {
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 12px;
+  }
+
+  #form_contato {
+    width: 100%;
+  }
+
+  #form_contato button {
+    width: 100%;
+  }
+}
