@@ -272,16 +272,17 @@ figcaption {
 
 #modals {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 3fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
-  width: 93%;
+  width: 100%;
   margin: 20px auto;
   padding: 20px;
 }
 
 .modal {
-  width: 350px;
-  height: 500px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
   background-color: rgb(19, 18, 18);
   color: white;
   display: flex;
@@ -290,9 +291,15 @@ figcaption {
   padding: 20px;
 }
 
-#image_modal {
-  width: 330px;
+#image_modal,
+.image_modal {
+  width: 100%;
+  height: auto;
   border-radius: 5px 5px 0 0;
+}
+
+.image_modal {
+  display: block;
 }
 
 .modal_content {
@@ -531,7 +538,7 @@ figcaption {
   }
 
   #form_contato {
-    width: 100%;
+    width: 93%;
   }
 
   #form_contato button {
